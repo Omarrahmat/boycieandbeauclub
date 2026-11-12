@@ -102,6 +102,21 @@ section{padding:110px 0}
 .svc.feat .ic{background:rgba(255,255,255,.12);color:#fff}
 .svc.feat li svg{color:var(--sage)}
 .svc.feat .price{border-color:rgba(255,255,255,.2)}
+.plist{list-style:none;margin:4px 0 22px;padding-top:18px;border-top:1px dashed var(--sand)}
+.plist li{display:flex;align-items:baseline;gap:8px;padding:7px 0;font-size:15.5px}
+.plist li::after{content:none}
+.plist .dots{flex:1;border-bottom:2px dotted var(--sand);transform:translateY(-4px)}
+.plist b{font-family:Fraunces,serif;font-size:19px;color:var(--olive-d);font-weight:600;white-space:nowrap}
+.svc.feat .plist{border-color:rgba(255,255,255,.2)}.svc.feat .plist .dots{border-color:rgba(255,255,255,.25)}.svc.feat .plist b{color:#fff}
+.svc .note{font-size:14px;font-style:italic;margin:0}
+.extras{margin-top:36px;background:#fff;border-radius:var(--radius);padding:34px 38px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;border:1px solid rgba(75,90,43,.07)}
+.extras h3{font-family:"Great Vibes",cursive;font-weight:400;font-size:44px;color:var(--olive);white-space:nowrap}
+.extras ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 30px}
+.extras li{display:flex;gap:10px;align-items:center;font-size:15.5px}
+.extras li svg{width:18px;height:18px;fill:var(--olive-l);flex:none}
+.extras li b{color:var(--olive-d)}
+.small-print{text-align:center;color:var(--muted);font-size:14.5px;margin-top:22px;font-style:italic}
+@media (max-width:980px){.extras{grid-template-columns:1fr;gap:16px;padding:28px}.extras ul{grid-template-columns:1fr}}
 .tag{position:absolute;top:22px;right:22px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.14em;padding:6px 12px;border-radius:999px;text-transform:uppercase}
 
 /* STEPS */
@@ -260,9 +275,9 @@ footer a:hover{opacity:1;color:#fff}
         <a href="https://wa.me/447904325053" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="paw" viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.5 10.5 0 0 1-1.7-5.7C5.1 10 10 5.2 16 5.2S26.9 10 26.9 15.9 22 26.4 16 26.4zm6-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> WhatsApp us</a>
       </div>
       <div class="trust">
-        <div><i><svg class="paw"><use href="#check"/></svg></i>Fully insured</div>
-        <div><i><svg class="paw"><use href="#check"/></svg></i>DBS checked</div>
-        <div><i><svg class="paw"><use href="#check"/></svg></i>Pet first aid trained</div>
+        <div><i><svg class="paw"><use href="#check"/></svg></i>Reliable &amp; trustworthy</div>
+        <div><i><svg class="paw"><use href="#check"/></svg></i>Free meet-and-greet</div>
+        <div><i><svg class="paw"><use href="#check"/></svg></i>Discounts for regulars</div>
       </div>
     </div>
     <div class="hero-art rv">
@@ -278,7 +293,7 @@ footer a:hover{opacity:1;color:#fff}
     <div class="head rv">
       <span class="eyebrow">What we do</span>
       <h2>Care that fits around your life</h2>
-      <p>Simple, flexible services with the same friendly faces every time — so your pets always know who's at the door.</p>
+      <p>Simple, flexible services and clear prices, with the same friendly face every time — so your pets always know who's at the door.</p>
     </div>
     <div class="svc-grid">
       <article class="svc rv">
@@ -286,12 +301,16 @@ footer a:hover{opacity:1;color:#fff}
         <h3>Dog Walking</h3>
         <p>Proper adventures, not just a lap of the block. Solo or small-group walks tailored to your dog's energy and personality.</p>
         <ul>
-          <li><svg><use href="#check"/></svg>30 or 60 minute walks</li>
-          <li><svg><use href="#check"/></svg>Solo walks for nervous or reactive dogs</li>
+          <li><svg><use href="#check"/></svg>Walks tailored to your dog's energy</li>
           <li><svg><use href="#check"/></svg>Fresh water &amp; towel-dry on return</li>
-          <li><svg><use href="#check"/></svg>GPS-tracked route &amp; photos</li>
+          <li><svg><use href="#check"/></svg>Photo update after every walk</li>
         </ul>
-        <div class="price"><span>from</span><b>£15</b><span>/ walk</span></div>
+        <ul class="plist">
+          <li>30-minute walk<span class="dots"></span><b>£12–£15</b></li>
+          <li>45-minute walk<span class="dots"></span><b>£15–£18</b></li>
+          <li>1-hour walk<span class="dots"></span><b>£18–£22</b></li>
+          <li>Additional dog <small>(same household)</small><span class="dots"></span><b>+£5</b></li>
+        </ul>
       </article>
       <article class="svc feat rv">
         <span class="tag">Most loved</span>
@@ -302,9 +321,14 @@ footer a:hover{opacity:1;color:#fff}
           <li><svg><use href="#check"/></svg>Feeding &amp; fresh water</li>
           <li><svg><use href="#check"/></svg>Litter tray cleaned every visit</li>
           <li><svg><use href="#check"/></svg>Playtime, brushing &amp; cuddles</li>
-          <li><svg><use href="#check"/></svg>Medication given if needed</li>
+          <li><svg><use href="#check"/></svg>Fresh water every visit</li>
         </ul>
-        <div class="price"><span>from</span><b>£12</b><span>/ visit</span></div>
+        <ul class="plist">
+          <li>20-minute visit<span class="dots"></span><b>£10–£12</b></li>
+          <li>30-minute visit<span class="dots"></span><b>£12–£15</b></li>
+          <li>45-minute visit<span class="dots"></span><b>£15–£18</b></li>
+          <li>Two visits per day<span class="dots"></span><b>£20–£25</b></li>
+        </ul>
       </article>
       <article class="svc rv">
         <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22L24 7l18 15"/><path d="M10 19v22h28V19"/><path d="M24 36s-7-4.5-7-9a3.6 3.6 0 0 1 7-1.2A3.6 3.6 0 0 1 31 27c0 4.5-7 9-7 9z"/></svg></div>
@@ -313,12 +337,27 @@ footer a:hover{opacity:1;color:#fff}
         <ul>
           <li><svg><use href="#check"/></svg>Toilet break &amp; garden play</li>
           <li><svg><use href="#check"/></svg>Feeding to your routine</li>
-          <li><svg><use href="#check"/></svg>Plants watered, post brought in</li>
-          <li><svg><use href="#check"/></svg>Morning, lunchtime or evening</li>
+                    <li><svg><use href="#check"/></svg>Morning, lunchtime or evening</li>
         </ul>
-        <div class="price"><span>from</span><b>£12</b><span>/ visit</span></div>
+        <ul class="plist">
+          <li>15-minute drop-in<span class="dots"></span><b>£9–£10</b></li>
+          <li>30-minute drop-in<span class="dots"></span><b>£12–£15</b></li>
+          <li>45-minute drop-in<span class="dots"></span><b>£15–£18</b></li>
+          <li>1-hour drop-in<span class="dots"></span><b>£18–£22</b></li>
+        </ul>
+        <p class="note">Ideal for dogs, cats, puppies, rabbits and other small pets.</p>
       </article>
     </div>
+    <div class="extras rv">
+      <h3>Additional charges</h3>
+      <ul>
+        <li><svg><use href="#paw"/></svg>Bank holidays: <b>+£5</b></li>
+        <li><svg><use href="#paw"/></svg>Late evening visits: <b>+£5</b></li>
+        <li><svg><use href="#paw"/></svg>Extra pets: <b>price on request</b></li>
+        <li><svg><use href="#paw"/></svg>Longer visits or special requirements: <b>price on request</b></li>
+      </ul>
+    </div>
+    <p class="small-print">All prices are starting prices. Travel fees may apply outside the local area. Discounts available for regular bookings.</p>
   </div>
 </section>
 
@@ -362,7 +401,7 @@ footer a:hover{opacity:1;color:#fff}
     <div class="promise-grid">
       <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div><h3>Same friendly face</h3><p>No rota of strangers. Your pet gets to know and trust their carer.</p></div>
       <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div><h3>Photo updates</h3><p>A message and pictures after every visit, so you never have to wonder.</p></div>
-      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Insured &amp; checked</h3><p>Fully insured, DBS checked and trained in pet first aid for total peace of mind.</p></div>
+      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Discounts for regulars</h3><p>Booking regular walks or visits? Ask about our discounted rates for repeat bookings.</p></div>
       <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Keys kept safe</h3><p>Your keys are coded, never labelled with your address, and kept securely.</p></div>
     </div>
   </div>
@@ -387,7 +426,7 @@ footer a:hover{opacity:1;color:#fff}
     <div class="faq-wrap rv">
       <details open><summary>Do you offer a free meet &amp; greet?</summary><p>Always. Before any booking we'll come and meet you and your pet at home, completely free and with no obligation. It's the best way for everyone to feel comfortable.</p></details>
       <details><summary>Which areas do you cover?</summary><p>We cover our local area and the surrounding neighbourhoods. Send us your postcode and we'll confirm straight away.</p></details>
-      <details><summary>Are you insured?</summary><p>Yes — we're fully insured for pet care, including care, custody and control of your pets and key cover for your home.</p></details>
+      <details><summary>Are there any extra charges?</summary><p>Bank holidays and late evening visits are +£5. Extra pets, longer visits or special requirements are priced on request, and travel fees may apply outside the local area. Regular bookings get a discount.</p></details>
       <details><summary>How will I know how the visit went?</summary><p>After every walk or visit you'll receive a message with photos and a quick update on how your pet got on — eating, toilet, mood and any mischief.</p></details>
       <details><summary>Can you give my pet medication?</summary><p>Yes, we're happy to give tablets, liquid medication and most routine treatments. Just let us know at your meet &amp; greet.</p></details>
       <details><summary>How do I book and pay?</summary><p>Book by message, phone or the form below. We'll send a simple invoice — bank transfer is easiest, and regular clients can pay weekly or monthly.</p></details>
@@ -442,7 +481,7 @@ footer a:hover{opacity:1;color:#fff}
       <div><h4>Services</h4><ul><li><a href="#services">Dog walking</a></li><li><a href="#services">Cat visits</a></li><li><a href="#services">Pet drop-ins</a></li><li><a href="#contact">Free meet &amp; greet</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="mailto:info@theboycieandbeauclub.com">info@theboycieandbeauclub.com</a></li><li><a href="tel:+447904325053">07904 325053</a></li><li><a href="https://wa.me/447904325053" target="_blank" rel="noopener">WhatsApp us</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
     </div>
-    <div class="f-bottom"><span>© <span id="yr">2026</span> The Boycie &amp; Beau Club. All rights reserved.</span><span>Fully insured · DBS checked</span></div>
+    <div class="f-bottom"><span>© <span id="yr">2026</span> The Boycie &amp; Beau Club. All rights reserved.</span><span>Loving care while you're away</span></div>
   </div>
 </footer>
 

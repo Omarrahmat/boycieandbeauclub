@@ -182,6 +182,10 @@ footer a:hover{opacity:1;color:#fff}
 .f-tag{font-family:"Great Vibes",cursive;font-size:34px;color:#fff;margin-top:18px}
 .f-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;font-size:14px;opacity:.7}
 
+.wa-fab{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:14px 20px 14px 16px;border-radius:999px;box-shadow:0 14px 30px -10px rgba(0,0,0,.35);transition:.25s}
+.wa-fab:hover{transform:translateY(-3px);background:#1ebe5a}
+.wa-fab svg{width:28px;height:28px}
+@media (max-width:600px){.wa-fab span{display:none}.wa-fab{padding:14px;right:16px;bottom:16px}}
 /* REVEAL */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
 .rv.in{opacity:1;transform:none}
@@ -253,7 +257,7 @@ footer a:hover{opacity:1;color:#fff}
       <p class="lead">Whether it's a muddy-pawed adventure, a quiet cuddle with your cat, or a quick check-in while you're stuck at work — we treat every pet like one of our own.</p>
       <div class="cta-row">
         <a href="#contact" class="btn btn-primary"><svg class="paw"><use href="#paw"/></svg> Book a meet &amp; greet</a>
-        <a href="#services" class="btn btn-ghost">See our services</a>
+        <a href="https://wa.me/447904325053" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="paw" viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.5 10.5 0 0 1-1.7-5.7C5.1 10 10 5.2 16 5.2S26.9 10 26.9 15.9 22 26.4 16 26.4zm6-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg> WhatsApp us</a>
       </div>
       <div class="trust">
         <div><i><svg class="paw"><use href="#check"/></svg></i>Fully insured</div>
@@ -398,8 +402,9 @@ footer a:hover{opacity:1;color:#fff}
       <h2>Let's get your pet booked in</h2>
       <p class="info">Tell us a little about your pet and we'll get back to you, usually the same day, to arrange a free meet &amp; greet.</p>
       <div class="cinfo">
-        <a href="mailto:hello@theboycieandbeauclub.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><span><small>Email</small>hello@theboycieandbeauclub.com</span></a>
-        <a href="tel:+447000000000"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><span><small>Call or WhatsApp</small>07000 000000</span></a>
+        <a href="mailto:info@theboycieandbeauclub.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><span><small>Email</small>info@theboycieandbeauclub.com</span></a>
+        <a href="tel:+447904325053"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><span><small>Call</small>07904 325053</span></a>
+        <a href="https://wa.me/447904325053?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20pet%20care" target="_blank" rel="noopener"><i style="background:#25D366;color:#fff"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.5 10.5 0 0 1-1.7-5.7C5.1 10 10 5.2 16 5.2S26.9 10 26.9 15.9 22 26.4 16 26.4zm6-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></i><span><small>WhatsApp — tap to chat</small>Message us on WhatsApp</span></a>
         <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><span><small>Hours</small>Mon – Sat, 7am – 7pm</span></div>
       </div>
     </div>
@@ -435,12 +440,13 @@ footer a:hover{opacity:1;color:#fff}
         <div class="f-tag">Happy pets, happy days.</div>
       </div>
       <div><h4>Services</h4><ul><li><a href="#services">Dog walking</a></li><li><a href="#services">Cat visits</a></li><li><a href="#services">Pet drop-ins</a></li><li><a href="#contact">Free meet &amp; greet</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:hello@theboycieandbeauclub.com">hello@theboycieandbeauclub.com</a></li><li><a href="tel:+447000000000">07000 000000</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:info@theboycieandbeauclub.com">info@theboycieandbeauclub.com</a></li><li><a href="tel:+447904325053">07904 325053</a></li><li><a href="https://wa.me/447904325053" target="_blank" rel="noopener">WhatsApp us</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
     </div>
     <div class="f-bottom"><span>© <span id="yr">2026</span> The Boycie &amp; Beau Club. All rights reserved.</span><span>Fully insured · DBS checked</span></div>
   </div>
 </footer>
 
+<a class="wa-fab" href="https://wa.me/447904325053?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20pet%20care" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.5 10.5 0 0 1-1.7-5.7C5.1 10 10 5.2 16 5.2S26.9 10 26.9 15.9 22 26.4 16 26.4zm6-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Chat with us</span></a>
 <script>
 const h=document.querySelector('header'),l=document.getElementById('links');
 document.getElementById('burger').onclick=()=>{l.classList.toggle('open');h.classList.toggle('open')};
@@ -450,7 +456,7 @@ document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)
 document.getElementById('yr').textContent=new Date().getFullYear();
 document.getElementById('form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
 const body=`Name: ${f.get('name')}\nPhone: ${f.get('phone')}\nEmail: ${f.get('email')}\nPostcode: ${f.get('postcode')}\nPet: ${f.get('pet')}\nService: ${f.get('service')}\n\n${f.get('message')}`;
-location.href='mailto:hello@theboycieandbeauclub.com?subject='+encodeURIComponent('New enquiry – '+f.get('service'))+'&body='+encodeURIComponent(body);
+location.href='mailto:info@theboycieandbeauclub.com?subject='+encodeURIComponent('New enquiry – '+f.get('service'))+'&body='+encodeURIComponent(body);
 document.getElementById('fields').style.display='none';document.getElementById('sent').style.display='block';};
 </script>
 </body>

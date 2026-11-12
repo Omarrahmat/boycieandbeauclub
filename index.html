@@ -112,7 +112,8 @@ section{padding:110px 0}
 .extras{margin-top:36px;background:#fff;border-radius:var(--radius);padding:34px 38px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;border:1px solid rgba(75,90,43,.07)}
 .extras h3{font-family:"Great Vibes",cursive;font-weight:400;font-size:44px;color:var(--olive);white-space:nowrap}
 .extras ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 30px}
-.extras li{display:flex;gap:10px;align-items:center;font-size:15.5px}
+.extras li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px}
+.extras li svg{margin-top:3px}
 .extras li svg{width:18px;height:18px;fill:var(--olive-l);flex:none}
 .extras li b{color:var(--olive-d)}
 .small-print{text-align:center;color:var(--muted);font-size:14.5px;margin-top:22px;font-style:italic}
@@ -351,10 +352,10 @@ footer a:hover{opacity:1;color:#fff}
     <div class="extras rv">
       <h3>Additional charges</h3>
       <ul>
-        <li><svg><use href="#paw"/></svg>Bank holidays: <b>+£5</b></li>
-        <li><svg><use href="#paw"/></svg>Late evening visits: <b>+£5</b></li>
-        <li><svg><use href="#paw"/></svg>Extra pets: <b>price on request</b></li>
-        <li><svg><use href="#paw"/></svg>Longer visits or special requirements: <b>price on request</b></li>
+        <li><svg><use href="#paw"/></svg><span>Bank holidays: <b>+£5</b></span></li>
+        <li><svg><use href="#paw"/></svg><span>Late evening visits: <b>+£5</b></span></li>
+        <li><svg><use href="#paw"/></svg><span>Extra pets: <b>price on request</b></span></li>
+        <li><svg><use href="#paw"/></svg><span>Longer visits or special requirements: <b>price on request</b></span></li>
       </ul>
     </div>
     <p class="small-print">All prices are starting prices. Travel fees may apply outside the local area. Discounts available for regular bookings.</p>

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Boycie &amp; Beau Club — Dog Walking, Cat Visits &amp; Pet Drop-ins</title>
+<meta name="description" content="Friendly, reliable dog walking, cat visits and pet drop-ins from The Boycie & Beau Club. Happy pets, happy days.">
+<meta property="og:image" content="https://theboycieandbeauclub.com/img/logo.webp">
+<link rel="canonical" href="https://theboycieandbeauclub.com/">
+<meta property="og:title" content="The Boycie & Beau Club">
+<meta property="og:description" content="Dog walking • Cat visits • Pet drop-ins. Happy pets, happy days.">
+<link rel="icon" href="img/icon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Great+Vibes&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf7ef; --paper:#f5efe2; --sand:#ebe3d0;
+  --olive:#4b5a2b; --olive-d:#36421d; --olive-l:#6f7f45;
+  --sage:#c8d1ad; --sage-l:#e4e9d4;
+  --ink:#2c2f22; --muted:#5f6350; --gold:#c9a45c;
+  --radius:22px;
+  --shadow:0 20px 50px -24px rgba(54,66,29,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font-family:Mulish,system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--olive-d);line-height:1.12;font-weight:600;letter-spacing:-.01em}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--olive);letter-spacing:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--olive)}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1.5px;background:var(--olive-l);opacity:.6}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;transition:.25s;border:2px solid var(--olive);cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--olive);color:#fff}
+.btn-primary:hover{background:var(--olive-d);border-color:var(--olive-d);transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;color:var(--olive)}
+.btn-ghost:hover{background:var(--olive);color:#fff}
+.paw{width:1em;height:1em;fill:currentColor;flex:none}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(75,90,43,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--sage)}
+.brand span{font-family:Fraunces,serif;font-weight:700;font-size:20px;color:var(--olive-d);line-height:1}
+.brand small{display:block;font-family:Mulish;font-size:10.5px;letter-spacing:.32em;font-weight:700;color:var(--olive-l);margin-top:4px}
+.links{display:flex;gap:30px;align-items:center}
+.links a{text-decoration:none;font-weight:600;font-size:15px;color:var(--muted);transition:.2s}
+.links a:hover{color:var(--olive)}
+.links .btn{padding:11px 22px;color:#fff}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--olive-d);margin:5px auto;border-radius:2px;transition:.3s}
+
+/* HERO */
+.hero{position:relative;padding:70px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-180px;top:-120px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,var(--sage-l) 0%,rgba(228,233,212,0) 70%);z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,74px);margin:18px 0 6px}
+.hero .script{font-size:clamp(40px,4.6vw,62px);display:block;line-height:1.1;margin-bottom:22px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:40px;padding-top:30px;border-top:1px solid var(--sand)}
+.trust div{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14.5px;color:var(--olive-d)}
+.trust i{width:36px;height:36px;border-radius:50%;background:var(--sage-l);display:grid;place-items:center;color:var(--olive);font-style:normal}
+.hero-art{position:relative}
+.logo-card{background:#fff;border-radius:34px;padding:18px;box-shadow:0 40px 80px -40px rgba(54,66,29,.45);transform:rotate(1.5deg);transition:transform .6s}
+.logo-card:hover{transform:rotate(0) scale(1.01)}
+.logo-card img{border-radius:22px;width:100%;height:auto}
+.float{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;color:var(--olive-d);animation:bob 5s ease-in-out infinite}
+.float small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.float .dot{width:40px;height:40px;border-radius:12px;background:var(--olive);color:#fff;display:grid;place-items:center;font-size:18px}
+.f1{left:-34px;bottom:70px}
+.f2{right:-20px;top:40px;animation-delay:-2.5s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+
+/* SECTIONS */
+section{padding:110px 0}
+.head{text-align:center;max-width:680px;margin:0 auto 60px}
+.head h2{font-size:clamp(34px,4vw,52px);margin:14px 0 14px}
+.head p{color:var(--muted);font-size:18px}
+
+/* SERVICES */
+.services{background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.svc{background:#fff;border-radius:var(--radius);padding:40px 34px;position:relative;transition:.35s;border:1px solid rgba(75,90,43,.07);display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.svc .ic{width:72px;height:72px;border-radius:22px;background:var(--sage-l);display:grid;place-items:center;margin-bottom:26px;color:var(--olive)}
+.svc .ic svg{width:38px;height:38px}
+.svc h3{font-size:27px;margin-bottom:10px}
+.svc p{color:var(--muted);margin-bottom:20px}
+.svc ul{list-style:none;margin-bottom:28px;flex:1}
+.svc li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:15.5px}
+.svc li svg{width:15px;height:15px;color:var(--olive-l);margin-top:5px}
+.price{display:flex;align-items:baseline;gap:8px;padding-top:22px;border-top:1px dashed var(--sand)}
+.price b{font-family:Fraunces,serif;font-size:36px;color:var(--olive-d);font-weight:600}
+.price span{color:var(--muted);font-size:14px}
+.svc.feat{background:var(--olive);color:#eef1e2;border:0}
+.svc.feat h3,.svc.feat .price b{color:#fff}
+.svc.feat p,.svc.feat .price span{color:#d6dcc1}
+.svc.feat .ic{background:rgba(255,255,255,.12);color:#fff}
+.svc.feat li svg{color:var(--sage)}
+.svc.feat .price{border-color:rgba(255,255,255,.2)}
+.tag{position:absolute;top:22px;right:22px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.14em;padding:6px 12px;border-radius:999px;text-transform:uppercase}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative}
+.steps::before{content:"";position:absolute;top:44px;left:16%;right:16%;border-top:2px dashed var(--sage)}
+.step{text-align:center;position:relative}
+.step .n{width:88px;height:88px;margin:0 auto 24px;border-radius:50%;background:var(--cream);border:2px solid var(--olive);display:grid;place-items:center;font-family:Fraunces,serif;font-size:34px;font-weight:600;color:var(--olive);position:relative;z-index:1}
+.step h3{font-size:24px;margin-bottom:10px}
+.step p{color:var(--muted);max-width:300px;margin:0 auto}
+
+/* MEET */
+.meet{background:linear-gradient(180deg,var(--cream),var(--sage-l))}
+.meet-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.meet-img{position:relative}
+.meet-img img{border-radius:28px;box-shadow:0 40px 80px -40px rgba(54,66,29,.5);width:100%}
+.meet-img::after{content:"";position:absolute;inset:22px -22px -22px 22px;border:2px solid var(--olive-l);border-radius:28px;z-index:-1;opacity:.5}
+.meet h2{font-size:clamp(34px,4vw,50px);margin:14px 0 22px}
+.meet p{color:var(--muted);margin-bottom:18px}
+.pets{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:30px 0}
+.pet{background:#fff;border-radius:18px;padding:20px 22px}
+.pet b{font-family:Fraunces,serif;font-size:22px;color:var(--olive-d);display:block}
+.pet span{font-size:14px;color:var(--muted)}
+
+/* PROMISE */
+.promise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.pr{padding:32px 26px;border-radius:var(--radius);background:#fff;border:1px solid rgba(75,90,43,.08);transition:.3s}
+.pr:hover{border-color:var(--olive-l)}
+.pr .ic{font-size:30px;margin-bottom:16px;color:var(--olive)}
+.pr .ic svg{width:34px;height:34px}
+.pr h3{font-size:20px;margin-bottom:8px}
+.pr p{font-size:15.5px;color:var(--muted)}
+
+/* QUOTE BAND */
+.band{background:var(--olive-d);color:#e6ead6;text-align:center;padding:90px 0;position:relative;overflow:hidden}
+.band .script{color:#fff;font-size:clamp(46px,6vw,84px);line-height:1.1}
+.band p{max-width:600px;margin:18px auto 0;font-size:18px;color:#c8d1ad}
+.band .pw{position:absolute;opacity:.07;width:120px;height:120px;fill:#fff}
+
+/* FAQ */
+.faq-wrap{max-width:820px;margin:0 auto}
+details{background:#fff;border-radius:18px;margin-bottom:14px;border:1px solid rgba(75,90,43,.08);overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:24px 28px;font-family:Fraunces,serif;font-size:20px;font-weight:600;color:var(--olive-d);display:flex;justify-content:space-between;align-items:center;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:Mulish;font-size:26px;color:var(--olive);transition:.3s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 28px 24px;color:var(--muted)}
+
+/* CONTACT */
+.contact{background:var(--paper)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(34px,4vw,50px);margin:14px 0 18px}
+.contact .info{color:var(--muted)}
+.cinfo{margin-top:32px;display:grid;gap:16px}
+.cinfo a,.cinfo div{display:flex;align-items:center;gap:16px;text-decoration:none;font-weight:600;color:var(--olive-d)}
+.cinfo i{width:50px;height:50px;border-radius:16px;background:#fff;display:grid;place-items:center;color:var(--olive);font-style:normal;flex:none}
+.cinfo i svg{width:22px;height:22px}
+.cinfo small{display:block;font-weight:500;color:var(--muted);font-size:13px}
+form{background:#fff;border-radius:28px;padding:42px;box-shadow:var(--shadow)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--olive-d);margin-bottom:7px}
+input,select,textarea{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--sand);background:var(--cream);font:inherit;font-size:16px;color:var(--ink);margin-bottom:18px;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--olive-l);background:#fff;box-shadow:0 0 0 4px var(--sage-l)}
+textarea{min-height:120px;resize:vertical}
+form .btn{width:100%;justify-content:center;padding:17px}
+.sent{display:none;text-align:center;padding:30px 0}
+.sent .script{font-size:52px}
+
+/* FOOTER */
+footer{background:#2a3316;color:#c8d1ad;padding:70px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand span{color:#fff}
+footer .brand small{color:var(--sage)}
+footer h4{font-family:Fraunces,serif;color:#fff;font-size:18px;margin-bottom:16px;font-weight:600}
+footer ul{list-style:none}
+footer li{padding:5px 0}
+footer a{text-decoration:none;opacity:.85}
+footer a:hover{opacity:1;color:#fff}
+.f-tag{font-family:"Great Vibes",cursive;font-size:34px;color:#fff;margin-top:18px}
+.f-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;font-size:14px;opacity:.7}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.float{animation:none}html{scroll-behavior:auto}}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .hero-grid,.meet-grid,.contact-grid{grid-template-columns:1fr;gap:50px}
+  .hero{padding-top:40px}
+  .hero-art{max-width:520px;margin:0 auto}
+  .svc-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .promise-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr;gap:50px}
+  .steps::before{display:none}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:820px){
+  .burger{display:block}
+  .links{position:fixed;top:78px;left:0;right:0;flex-direction:column;background:var(--cream);padding:30px 24px 40px;gap:22px;border-bottom:1px solid var(--sand);transform:translateY(-130%);transition:.4s;box-shadow:0 30px 40px -30px rgba(0,0,0,.2)}
+  .links.open{transform:none}
+  .links a{font-size:18px}
+  header.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  header.open .burger span:nth-child(2){opacity:0}
+  header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  section{padding:80px 0}
+  .promise-grid,.row,.pets{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  form{padding:28px 22px}
+  .f1{left:6px;bottom:20px}.f2{right:6px;top:14px}
+  .float{padding:10px 12px;font-size:13px}.float .dot{width:32px;height:32px;font-size:15px}
+  .brand span{font-size:17px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="paw" viewBox="0 0 64 64"><ellipse cx="18" cy="22" rx="6.5" ry="8.5"/><ellipse cx="32" cy="15" rx="6.5" ry="8.5"/><ellipse cx="46" cy="22" rx="6.5" ry="8.5"/><ellipse cx="9" cy="36" rx="5.5" ry="7" transform="rotate(-20 9 36)"/><ellipse cx="55" cy="36" rx="5.5" ry="7" transform="rotate(20 55 36)"/><path d="M32 30c-9 0-17 12-17 19 0 6 5 8 9 7s5-2 8-2 4 1 8 2 9-1 9-7c0-7-8-19-17-19z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  </defs>
+</svg>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><img src="img/icon.webp" alt="Boycie"><span>Boycie &amp; Beau<small>THE CLUB</small></span></a>
+    <nav class="links" id="links">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#meet">Our story</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact" class="btn btn-primary">Book a visit</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="eyebrow">Dog walking · Cat visits · Drop-ins</span>
+      <h1>Loving care for the pets who run your home.</h1>
+      <span class="script">Happy pets, happy days.</span>
+      <p class="lead">Whether it's a muddy-pawed adventure, a quiet cuddle with your cat, or a quick check-in while you're stuck at work — we treat every pet like one of our own.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary"><svg class="paw"><use href="#paw"/></svg> Book a meet &amp; greet</a>
+        <a href="#services" class="btn btn-ghost">See our services</a>
+      </div>
+      <div class="trust">
+        <div><i><svg class="paw"><use href="#check"/></svg></i>Fully insured</div>
+        <div><i><svg class="paw"><use href="#check"/></svg></i>DBS checked</div>
+        <div><i><svg class="paw"><use href="#check"/></svg></i>Pet first aid trained</div>
+      </div>
+    </div>
+    <div class="hero-art rv">
+      <div class="logo-card"><img src="img/logo.webp" alt="The Boycie & Beau Club logo — a blue Staffy and a grey British Shorthair cat" width="1254" height="1254"></div>
+      <div class="float f1"><span class="dot">📸</span><div>Photo updates<small>after every visit</small></div></div>
+      <div class="float f2"><span class="dot"><svg class="paw" style="fill:#fff"><use href="#paw"/></svg></span><div>Small groups<small>never overcrowded</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>Care that fits around your life</h2>
+      <p>Simple, flexible services with the same friendly faces every time — so your pets always know who's at the door.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="8" r="4"/><path d="M13 13v12l-4 14M13 25l5 14M13 17l6 3 6-6"/><path d="M25 14c4 7 8 10 13 12"/><path d="M36 26c-2 0-4 2-4 4v9M44 30v9M36 30h8c0-3-2-6-4-6"/></svg></div>
+        <h3>Dog Walking</h3>
+        <p>Proper adventures, not just a lap of the block. Solo or small-group walks tailored to your dog's energy and personality.</p>
+        <ul>
+          <li><svg><use href="#check"/></svg>30 or 60 minute walks</li>
+          <li><svg><use href="#check"/></svg>Solo walks for nervous or reactive dogs</li>
+          <li><svg><use href="#check"/></svg>Fresh water &amp; towel-dry on return</li>
+          <li><svg><use href="#check"/></svg>GPS-tracked route &amp; photos</li>
+        </ul>
+        <div class="price"><span>from</span><b>£15</b><span>/ walk</span></div>
+      </article>
+      <article class="svc feat rv">
+        <span class="tag">Most loved</span>
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20V7l8 7h12l8-7v13c0 11-6 19-14 19S10 31 10 20z"/><circle cx="18" cy="23" r="1.6" fill="currentColor"/><circle cx="30" cy="23" r="1.6" fill="currentColor"/><path d="M22 29l2 2 2-2M3 25h8M3 30l8-2M45 25h-8M45 30l-8-2"/></svg></div>
+        <h3>Cat Visits</h3>
+        <p>Cats are happiest at home. We keep their routine perfectly intact while you're away — with plenty of fuss, if they want it.</p>
+        <ul>
+          <li><svg><use href="#check"/></svg>Feeding &amp; fresh water</li>
+          <li><svg><use href="#check"/></svg>Litter tray cleaned every visit</li>
+          <li><svg><use href="#check"/></svg>Playtime, brushing &amp; cuddles</li>
+          <li><svg><use href="#check"/></svg>Medication given if needed</li>
+        </ul>
+        <div class="price"><span>from</span><b>£12</b><span>/ visit</span></div>
+      </article>
+      <article class="svc rv">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22L24 7l18 15"/><path d="M10 19v22h28V19"/><path d="M24 36s-7-4.5-7-9a3.6 3.6 0 0 1 7-1.2A3.6 3.6 0 0 1 31 27c0 4.5-7 9-7 9z"/></svg></div>
+        <h3>Pet Drop-ins</h3>
+        <p>A friendly pop-in for pups, bunnies, guinea pigs and all small pets — perfect for long workdays or a day out.</p>
+        <ul>
+          <li><svg><use href="#check"/></svg>Toilet break &amp; garden play</li>
+          <li><svg><use href="#check"/></svg>Feeding to your routine</li>
+          <li><svg><use href="#check"/></svg>Plants watered, post brought in</li>
+          <li><svg><use href="#check"/></svg>Morning, lunchtime or evening</li>
+        </ul>
+        <div class="price"><span>from</span><b>£12</b><span>/ visit</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">How it works</span>
+      <h2>Three easy steps to a happy pet</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">1</div><h3>Say hello</h3><p>Drop us a message with a little about your pet and what you need.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Free meet &amp; greet</h3><p>We visit you at home to meet your pet, learn their quirks and agree a routine.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Relax</h3><p>We take it from there — with photos and a note after every single visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="meet" id="meet">
+  <div class="wrap meet-grid">
+    <div class="meet-img rv"><img src="img/pair.webp" alt="Boycie the Staffy and Beau the British Shorthair" width="920" height="580" loading="lazy"></div>
+    <div class="rv">
+      <span class="eyebrow">Our story</span>
+      <h2>It all started with <span class="script" style="font-size:1.15em">Boycie &amp; Beau</span></h2>
+      <p>Our club is named after the two characters who rule our own home: Boycie, a big-hearted blue Staffy who has never met a walk he didn't love, and Beau, a dignified British Shorthair who very much runs the household.</p>
+      <p>Caring for them taught us what pet owners really want — someone reliable, someone who genuinely cares, and someone who'll treat their home and their animals with total respect. That's exactly what we offer every member of the club.</p>
+      <div class="pets">
+        <div class="pet"><b>Boycie</b><span>Head of Walks &amp; Zoomies</span></div>
+        <div class="pet"><b>Beau</b><span>Chief Nap Inspector</span></div>
+      </div>
+      <a href="#contact" class="btn btn-primary"><svg class="paw"><use href="#paw"/></svg> Join the club</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Our promise</span>
+      <h2>Why pets (and their people) love us</h2>
+    </div>
+    <div class="promise-grid">
+      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div><h3>Same friendly face</h3><p>No rota of strangers. Your pet gets to know and trust their carer.</p></div>
+      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div><h3>Photo updates</h3><p>A message and pictures after every visit, so you never have to wonder.</p></div>
+      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Insured &amp; checked</h3><p>Fully insured, DBS checked and trained in pet first aid for total peace of mind.</p></div>
+      <div class="pr rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Keys kept safe</h3><p>Your keys are coded, never labelled with your address, and kept securely.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <svg class="pw" style="left:6%;top:20%;transform:rotate(-20deg)"><use href="#paw"/></svg>
+  <svg class="pw" style="right:8%;bottom:14%;transform:rotate(18deg)"><use href="#paw"/></svg>
+  <div class="wrap rv">
+    <div class="script">Happy pets, happy days.</div>
+    <p>Spaces are limited so every pet gets the time and attention they deserve. Get in touch to check availability in your area.</p>
+    <a href="#contact" class="btn" style="background:#fff;color:var(--olive-d);border-color:#fff;margin-top:30px">Check availability</a>
+  </div>
+</div>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Good questions</span>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="faq-wrap rv">
+      <details open><summary>Do you offer a free meet &amp; greet?</summary><p>Always. Before any booking we'll come and meet you and your pet at home, completely free and with no obligation. It's the best way for everyone to feel comfortable.</p></details>
+      <details><summary>Which areas do you cover?</summary><p>We cover our local area and the surrounding neighbourhoods. Send us your postcode and we'll confirm straight away.</p></details>
+      <details><summary>Are you insured?</summary><p>Yes — we're fully insured for pet care, including care, custody and control of your pets and key cover for your home.</p></details>
+      <details><summary>How will I know how the visit went?</summary><p>After every walk or visit you'll receive a message with photos and a quick update on how your pet got on — eating, toilet, mood and any mischief.</p></details>
+      <details><summary>Can you give my pet medication?</summary><p>Yes, we're happy to give tablets, liquid medication and most routine treatments. Just let us know at your meet &amp; greet.</p></details>
+      <details><summary>How do I book and pay?</summary><p>Book by message, phone or the form below. We'll send a simple invoice — bank transfer is easiest, and regular clients can pay weekly or monthly.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let's get your pet booked in</h2>
+      <p class="info">Tell us a little about your pet and we'll get back to you, usually the same day, to arrange a free meet &amp; greet.</p>
+      <div class="cinfo">
+        <a href="mailto:hello@theboycieandbeauclub.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><span><small>Email</small>hello@theboycieandbeauclub.com</span></a>
+        <a href="tel:+447000000000"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><span><small>Call or WhatsApp</small>07000 000000</span></a>
+        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><span><small>Hours</small>Mon – Sat, 7am – 7pm</span></div>
+      </div>
+    </div>
+    <form class="rv" id="form">
+      <div id="fields">
+        <div class="row">
+          <div><label for="n">Your name</label><input id="n" name="name" required placeholder="Jane Smith"></div>
+          <div><label for="p">Phone</label><input id="p" name="phone" type="tel" placeholder="07…"></div>
+        </div>
+        <div class="row">
+          <div><label for="e">Email</label><input id="e" name="email" type="email" required placeholder="you@email.com"></div>
+          <div><label for="pc">Postcode</label><input id="pc" name="postcode" placeholder="AB1 2CD"></div>
+        </div>
+        <div class="row">
+          <div><label for="pet">Pet's name</label><input id="pet" name="pet" placeholder="Biscuit"></div>
+          <div><label for="s">Service</label><select id="s" name="service"><option>Dog walking</option><option>Cat visits</option><option>Pet drop-ins</option><option>Not sure yet</option></select></div>
+        </div>
+        <label for="m">Tell us about your pet</label>
+        <textarea id="m" name="message" placeholder="Breed, age, personality, and when you need us…"></textarea>
+        <button class="btn btn-primary" type="submit"><svg class="paw"><use href="#paw"/></svg> Send enquiry</button>
+      </div>
+      <div class="sent" id="sent"><div class="script">Thank you!</div><p>Your email app should now be open with your enquiry ready to send. We'll be in touch very soon.</p></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="brand"><img src="img/icon.webp" alt=""><span>Boycie &amp; Beau<small>THE CLUB</small></span></a>
+        <div class="f-tag">Happy pets, happy days.</div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="#services">Dog walking</a></li><li><a href="#services">Cat visits</a></li><li><a href="#services">Pet drop-ins</a></li><li><a href="#contact">Free meet &amp; greet</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:hello@theboycieandbeauclub.com">hello@theboycieandbeauclub.com</a></li><li><a href="tel:+447000000000">07000 000000</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© <span id="yr">2026</span> The Boycie &amp; Beau Club. All rights reserved.</span><span>Fully insured · DBS checked</span></div>
+  </div>
+</footer>
+
+<script>
+const h=document.querySelector('header'),l=document.getElementById('links');
+document.getElementById('burger').onclick=()=>{l.classList.toggle('open');h.classList.toggle('open')};
+l.querySelectorAll('a').forEach(a=>a.onclick=()=>{l.classList.remove('open');h.classList.remove('open')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+const body=`Name: ${f.get('name')}\nPhone: ${f.get('phone')}\nEmail: ${f.get('email')}\nPostcode: ${f.get('postcode')}\nPet: ${f.get('pet')}\nService: ${f.get('service')}\n\n${f.get('message')}`;
+location.href='mailto:hello@theboycieandbeauclub.com?subject='+encodeURIComponent('New enquiry – '+f.get('service'))+'&body='+encodeURIComponent(body);
+document.getElementById('fields').style.display='none';document.getElementById('sent').style.display='block';};
+</script>
+</body>
+</html>
